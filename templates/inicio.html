@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<!-- home section start -->
+<div class="home_section layout_padding">
+   <div class="container text-center">
+      <h1 class="home_title">Pulsa sobre la siguiente imagen para ir al buscador</h1>
+      <a href="/buscador">
+         <img src="{{ url_for('static', filename='images/alex.png') }}" alt="Imagen del buscador" width="252" height="112" class="mx-auto d-block">
+      </a>
+   </div>
+</div>
+<!-- home section end -->
+{% endblock %}
