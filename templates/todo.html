@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Top artistas de la plataforma{% endblock %}
+
+{% block content %}
+    <h1 style="text-align: center;">Top 50 artistas de la paltaforma</h1>
+    <ol style="text-align: center;">
+        {% for artist in artists %}
+            <li><a href="/artista/{{ artist.name }}">{{ loop.index }}. {{ artist.name }}</a></li>
+        {% endfor %}
+    </ol>
+{% endblock %}
