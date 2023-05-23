@@ -3,7 +3,7 @@
 {% block content %}
     <h1 style="text-align: center;">{{ artista }}</h1>
     <p>{{ bio }}</p>
-    <h2>Top 5 Canciones</h2>
+    <h2 style="text-align: center;">Top 5 Canciones</h2>
     <ol style="text-align: center;">
         {% for track in top_tracks %}
             <li>{{ loop.index }}. {{ track.name }}</li>

@@ -140,5 +140,4 @@ def obtener_artista(nombre):
         return render_template('error.html', message="Ha ocurrido un error al realizar la petición de la biografía.")
 
 
-if __name__ == '__main__':
-    app.run("0.0.0.0", 5000, debug=True)
+app.run("0.0.0.0", 5000, debug=True)
