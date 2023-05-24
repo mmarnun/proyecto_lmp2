@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Información del género musical{% endblock %}
+{% block content %}
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 offset-md-3">
+            <h2>Información del género musical: {{ tag_info.name }}</h2>
+            <h3>Descripción: </h3>
+            <p class="description">{{ tag_info.wiki.content|safe }}</p>
+            <h3>Número de artistas etiquetados: {{ tag_info.total }}</h3>
+         </div>
+      </div>
+   </div>
+{% endblock %}

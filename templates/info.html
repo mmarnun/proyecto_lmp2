@@ -2,7 +2,7 @@
 {% block title %}Información del Artista{% endblock %}
 {% block content %}
     <h1 class="home_title">{{ artista }}</h1>
-    <p>{{ bio }}</p>
+    <p>{{ bio|safe }}</p>
     <h2 class="home_title">Top 5 Canciones</h2>
     <ol>
         {% for track in top_tracks %}

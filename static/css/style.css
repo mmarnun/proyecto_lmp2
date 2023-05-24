@@ -48,8 +48,6 @@ body {
 
 a {
     color: #1f1f1f;
-    text-decoration: none !important;
-    outline: none !important;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -68,23 +66,26 @@ h6 {
     padding: 0 0 10px 0;
     font-weight: normal;
     line-height: normal;
-    color: #111111;
+    color: #000000;
     margin: 0;
     text-align: center;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
+    color: #191970;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
+    color: #191970;
+
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h4 {
@@ -99,9 +100,6 @@ h6 {
     font-size: 13px;
 }
 
-p {
-    text-align: center;
-}
 
 ol {
     margin-left: 20px;
@@ -125,28 +123,22 @@ ol {
     box-sizing: border-box;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-    color: #212121;
-    text-decoration: none!important;
-    opacity: 1
-}
 
 button:focus {
     outline: none;
 }
 
-
 p {
-    margin: 20px;
+    margin: 40px;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
 }
+p.description {
+    text-align: left;
+}
+
 
 a {
     color: #222222;
@@ -240,9 +232,8 @@ button {
     height: auto;
     background-size: 100%;
 }
-
 .logo {
-    width: 35%;
+    width: 39%;
     float: left;
 }
 
@@ -252,7 +243,7 @@ button {
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -428,3 +419,12 @@ body {
     background-color: #E5097F;
     color: #ffffff;
 }
+
+.radio-label {
+    font-size: 17px;
+}
+
+.radio-label input[type="radio"] {
+    transform: scale(1.0);
+}
+
