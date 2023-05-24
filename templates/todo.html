@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Buscador{% endblock %}
 {% block content %}
-    <h1 style="text-align: center;">Top 50 artistas de la paltaforma</h1>
-    <ol style="text-align: center;">
+    <h1>Top 50 artistas de la paltaforma</h1>
+    <ol>
         {% for artist in artists %}
-            <li><a href="/artista/{{ artist.name }}">{{ loop.index }}. {{ artist.name }}</a></li>
+            <li><a href="/artista/{{ artist.name }}">{{ artist.name }}</a></li>
         {% endfor %}
     </ol>
 {% endblock %}

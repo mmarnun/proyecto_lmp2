@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Información del Artista{% endblock %}
 {% block content %}
-    <h1 style="text-align: center;">{{ artista }}</h1>
+    <h1 class="home_title">{{ artista }}</h1>
     <p>{{ bio }}</p>
-    <h2 style="text-align: center;">Top 5 Canciones</h2>
-    <ol style="text-align: center;">
+    <h2 class="home_title">Top 5 Canciones</h2>
+    <ol>
         {% for track in top_tracks %}
-            <li>{{ loop.index }}. {{ track.name }}</li>
+            <li>{{ track.name }}</li>
         {% endfor %}
     </ol>
 {% endblock %}
