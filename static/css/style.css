@@ -123,6 +123,9 @@ ol {
     box-sizing: border-box;
 }
 
+.name {
+   margin-top: 30px;
+}
 
 button:focus {
     outline: none;
