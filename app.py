@@ -1,12 +1,13 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
+load_dotenv()
 url_base = "http://ws.audioscrobbler.com/2.0/"
-api_key = "c4831afa75cd37744a4a125684dcc64d"
-
+api_key = os.getenv("api_key")
 @app.route('/')
 def inicio():
     return render_template("inicio.html")
